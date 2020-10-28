@@ -140,10 +140,4 @@ function percentOf (numbOne, numbTwo) {
 
   }
   
-  runAll(20);
-
-
-    
-
-     
-     
+  runAll(20)
