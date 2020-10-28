@@ -53,9 +53,6 @@ let item5 = document.querySelector("#ex5");
 item5.innerHTML = (`${celsius}°C is ${cInf}°F. ${fahrenheit}°F is ${FInc}°C`);
 
 
-
-
-
 // EXERCISE 6
 // Write a function named squareNumber that will take one argument (a number), square that number, and return the result. It should also log a string like "The result of squaring the number 3 is 9."
 
@@ -68,8 +65,6 @@ function squareNumber (number) {
    }
    
    squareNumber (3);
-   
-   
    
    
    // EXERCISE 7
@@ -123,24 +118,30 @@ function squareNumber (number) {
    //      3. Calculate the area of a circle with the result of #2 as the radius.   
    //      4. Calculate what percentage that area (#3) is of the squared result (#2).
    
-   
-   // function runAll (number) {
-   
-   
-   // }
-   
-//    function runAll(number) {
-//        let half = halfNumber(number)
-//        let squared = squareNumber(half)
-//        let area = areaOfCircle(squared)
-//        let percent = percentOf(squared, area)
-//        let item10 = document.querySelector("#ex10")
-//  item10.innerHTML = (` half of ${number} is ${half}`)
-//   return runAll
-//  Half of 20 is 10
-//    The result of squaring the number 10 is 100
-//  The area for a circle with radius 100 is 31415.92
+// TESTING, DOESNT WORK WHEN LOADED
 
-//      }
+//    function runAll(number) {
+//     let half = halfNumber(number)
+//     let squared = squareNumber(half)
+//     let area = areaOfCircle(squared)
+//     let percent = percentOf(squared, area)
+//     let item10 = document.querySelector("#ex10")
+//     item10.innerHTML = (`Half of ${number} is ${half}.
+//     The result of squaring the number ${half} is ${squared}.
+//     The area for a circle with radius ${squared} is ${area}.
+//     ${squared} is ${percent}% of ${area}.
+//     `)
+
+//   }
+  
+//   runAll(20);
+
+    
+    
+// IGNORE THIS.
+// Half of 20 is 10
+// The result of squaring the number 10 is 100
+// The area for a circle with radius 100 is 31415.92
+// 100 is 0.31830995240629595% of 31415.92
      
-     runAll(20);
+     
