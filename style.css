@@ -1,0 +1,21 @@
+
+
+body {
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    padding: 30px;
+    color: navy;
+  }
+  
+  ol {
+    border: 20px solid mintcream;
+    box-shadow: 0px 0px 0px 8px steelblue;     
+    /* opacity: 0.8; */
+  }
+
+  li {
+    margin: 15px;
+
+
+  }

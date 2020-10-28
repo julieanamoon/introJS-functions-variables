@@ -135,7 +135,7 @@ function percentOf (numbOne, numbTwo) {
     item10.innerHTML = (`Half of ${number} is ${half}.
     The result of squaring the number ${half} is ${squared}.
     The area for a circle with radius ${squared} is ${area.toFixed(2)}.
-    ${squared} is % ${percent.toFixed(2)} of ${area.toFixed(2)}.
+    ${squared} is ${percent.toFixed(2)}% of ${area.toFixed(2)}.
     `)
 
   }
