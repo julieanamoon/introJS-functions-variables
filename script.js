@@ -144,11 +144,6 @@ function percentOf (numbOne, numbTwo) {
 
 
     
-    
-// IGNORE THIS.
-// Half of 20 is 10
-// The result of squaring the number 10 is 100
-// The area for a circle with radius 100 is 31415.92
-// 100 is 0.31830995240629595% of 31415.92
+
      
      
