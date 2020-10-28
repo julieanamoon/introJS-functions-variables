@@ -35,8 +35,8 @@ item3.innerHTML = ("You will need " + total + " to last you until the ripe old a
 //Calculate properties of a circle, using the definitions here. Store a radius into a variable. Calculate the circumference based on the radius, and output "The circumference is NN". Calculate the area based on the radius, and output "The area is NN".
 
 let radius = 3;
-let circumference = 3.141592 * 2*radius;
-let area = 3.141592 * radius*radius;
+let circumference = Math.PI * 2*radius;
+let area = Math.PI * radius*radius;
 let item4 = document.querySelector("#ex4");
 item4.innerHTML = ("The circumference is " + circumference.toFixed(2) + ". The area is " + area.toFixed(2))
 
@@ -108,7 +108,7 @@ function percentOf (numbOne, numbTwo) {
 
 
       function areaOfCircle (radiuss) {
-        return areaa = (3.141592 * radiuss**2)
+        return areaa = (Math.PI * radiuss**2)
        }
        
        let radiuss = 2
