@@ -38,7 +38,7 @@ let radius = 3;
 let circumference = 3.141592 * 2*radius;
 let area = 3.141592 * radius*radius;
 let item4 = document.querySelector("#ex4");
-item4.innerHTML = ("The circumference is " + circumference + ". The area is " + area)
+item4.innerHTML = ("The circumference is " + circumference.toFixed(2) + ". The area is " + area.toFixed(2))
 
 
 //EXERCISE 5: The Temperature Converter
@@ -57,59 +57,66 @@ item5.innerHTML = (`${celsius}°C is ${cInf}°F. ${fahrenheit}°F is ${FInc}°C`
 // Write a function named squareNumber that will take one argument (a number), square that number, and return the result. It should also log a string like "The result of squaring the number 3 is 9."
 
 function squareNumber (number) {
-    let squareNumber = number * number
-    let item6 = document.querySelector("#ex6");
-    item6.innerHTML = (`The result of squaring the number ${number} is ${squareNumber}`)
-    return squareNumber
-   
+    return number ** 2
    }
    
-   squareNumber (3);
+   let numToSq = 3
+   let item6 = document.querySelector("#ex6");
+   item6.innerHTML = (`The result of squaring the number ${numToSq} is ${squareNumber(numToSq)}`)
+   
    
    
    // EXERCISE 7
    // Write a function named halfNumber that will take one argument (a number), divide it by 2, and return the result. It should also log a string like "Half of 5 is 2.5.".
    
-   function halfNumber (number) {
-       let halfNumber = number / 2
+      function halfNumber (number) {
+        return number / 2
+       
+       }
+    
+       let numToHalf = 5
        let item7 = document.querySelector("#ex7");
-       item7.innerHTML = (`Half of ${number} is ${halfNumber}`)
-       return halfNumber
-      
-      }
-      
-      halfNumber (5);
-   
+       item7.innerHTML = (`Half of ${numToHalf} is ${halfNumber(numToHalf)}`)
+
    
    // EXERCISE 8
    // Write a function named percentOf that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like "2 is 50% of 4."
-   
-   
-   function percentOf (numberOne, numberTwo) {
-       let percent = numberOne / numberTwo * 100
-       let item8 = document.querySelector("#ex8");
-       item8.innerHTML = (`${numberOne} is ${percent}% of ${numberTwo}`)
-       return percent
       
-      }
-      
-      percentOf (2,4);
+function percentOf (numbOne, numbTwo) {
+    return numbOne / numbTwo * 100
    
-   
+   }
+
+      let numToPercentOne = 2, numToPercentTwo = 4
+      let item8 = document.querySelector("#ex8");
+      item8.innerHTML = (`${numToPercentOne} is ${percentOf(numToPercentOne,numToPercentTwo)}% of ${numToPercentTwo}`)
+
    
    // EXERCISE 9
    // Write a function named areaOfCircle that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like "The area for a circle with radius 2 is 12.566370614359172."
    //      Bonus: Round the result so there are only two digits after the decimal.
    
-   function areaOfCircle (radius) {
-       let area = 3.141592 * radius*radius
-       let item9 = document.querySelector("#ex9");
-       area = area.toFixed(2);
-       item9.innerHTML = (`The area for a circle with radius ${radius} is ${area}`)
-       return area
-      }
+//    function areaOfCircle (radius) {
+//        let area = 3.141592 * radius*radius
+//        let item9 = document.querySelector("#ex9");
+//        area = area.toFixed(2);
+//        item9.innerHTML = (`The area for a circle with radius ${radius} is ${area}`)
+//        return area
+//       }
       
-      areaOfCircle (2)
+//       areaOfCircle (2)
+
+
+      function areaOfCircle (radiuss) {
+        return areaa = (3.141592 * radiuss**2)
+       }
+       
+       let radiuss = 2
+       let item9 = document.querySelector("#ex9")
+       item9.innerHTML =  (`The area for a circle with radius ${radiuss} is ${areaOfCircle(radiuss).toFixed(2)}`)
+    
+
+       
    
    // EXERCISE 10
    // Write a function named runAll that will take one argument (a number) and perform the following operations, using the functions you wrote earlier
@@ -118,23 +125,23 @@ function squareNumber (number) {
    //      3. Calculate the area of a circle with the result of #2 as the radius.   
    //      4. Calculate what percentage that area (#3) is of the squared result (#2).
    
-// TESTING, DOESNT WORK WHEN LOADED
+   
+   function runAll(number) {
+    let half = halfNumber(number)
+    let squared = squareNumber(half)
+    let area = areaOfCircle(squared)
+    let percent = percentOf(squared, area)
+    let item10 = document.querySelector("#ex10")
+    item10.innerHTML = (`Half of ${number} is ${half}.
+    The result of squaring the number ${half} is ${squared}.
+    The area for a circle with radius ${squared} is ${area.toFixed(2)}.
+    ${squared} is % ${percent.toFixed(2)} of ${area.toFixed(2)}.
+    `)
 
-//    function runAll(number) {
-//     let half = halfNumber(number)
-//     let squared = squareNumber(half)
-//     let area = areaOfCircle(squared)
-//     let percent = percentOf(squared, area)
-//     let item10 = document.querySelector("#ex10")
-//     item10.innerHTML = (`Half of ${number} is ${half}.
-//     The result of squaring the number ${half} is ${squared}.
-//     The area for a circle with radius ${squared} is ${area}.
-//     ${squared} is ${percent}% of ${area}.
-//     `)
-
-//   }
+  }
   
-//   runAll(20);
+  runAll(20);
+
 
     
     
